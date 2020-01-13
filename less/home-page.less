@@ -1,6 +1,21 @@
 // Home Content
 
 .home {
+  display: flex;
+  flex-direction: column;
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    background-color: @border-real;
+    
+  }
+}
+
+
+.home {
 
   .intro {
 
@@ -56,9 +71,6 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
 
     .walk-img {
@@ -73,3 +85,14 @@
     }
   }
 }// home
+
+.btn {
+  .btnmixin (4%, 50%);
+  background-color: @btn-bg-color;
+  border: solid 1px black;
+  text-decoration: none;
+  color: red;
+  border-radius: 8px;
+  font-size: largest;
+  padding: @padding;
+}

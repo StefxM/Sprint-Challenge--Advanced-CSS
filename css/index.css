@@ -1,5 +1,12 @@
-.links {
-  color: #5E6164;
+.btnstyle {
+  background-color: #22283A;
+  border: solid 1px black;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+  padding: 4%;
+  width: 33%;
+  font-size: largest;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -163,6 +170,23 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.home {
+  display: flex;
+  justify-content: space-between;
+}
+.home .top {
+  padding: 3%;
+}
+.home .navbarlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  align-items: center;
+}
+.home .navbarlinks .links {
+  color: #5E6164;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -172,6 +196,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.home .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  background-color: #dee2e6;
 }
 .home .intro h2 {
   padding: 15px;
@@ -214,6 +250,16 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  border: solid 1px black;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+  padding: 4%;
+  width: 33%;
+  font-size: largest;
 }
 .home .walk .walk-img {
   width: 46%;
