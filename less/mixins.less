@@ -1,6 +1,11 @@
 // Mixins Here
-.btnmixin (@padding, @style) {
+.btnmixin (@padding, @height) {
     border: black @style;
     padding: @padding;
+    height: @height;
 }
 
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
